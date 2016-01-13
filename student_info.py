@@ -1,9 +1,9 @@
 """Module to get student info from roll number, use fetch_info."""
 from bs4 import BeautifulSoup as bsoup
-import logging
-import urllib2
 import json
+import logging
 import re
+from urllib import request
 ROLL_NO = re.compile('[A-Z]{2}\d{2}[A-Z]\d{3}$')
 
 
@@ -19,7 +19,7 @@ def fetch_info(roll_no):
         raise ValueError("Invalid roll no")
     url = 'https://www.iitm.ac.in/students/sinfo/%s' % (roll_no)
     logging.info('opening url %s', url)
-    res = urllib2.urlopen(url)
+    res = request.urlopen(url)
     logging.info('status code for response %s', res.getcode())
     html = res.read()
     return student_parser(html, roll_no)
@@ -31,7 +31,7 @@ def parse_tr_second(tr):
         tds = tr.find_all("td")
         if len(tds) > 1:
             return tds[1].text
-    except:
+    except Exception:
         raise ValueError("tr doesnt have 2 tds")
 
 
@@ -43,7 +43,7 @@ def student_parser(html, roll_no=""):
         course, facad, sem
     """
     logging.debug('fetching student info')
-    soup = bsoup(html)
+    soup = bsoup(html,'html.parser')
     student = {}
     try:
         main = soup.find(id="block-system-main").table
