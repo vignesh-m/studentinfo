@@ -6,7 +6,6 @@ logging.basicConfig(format="%(asctime)s : %(levelname)s:%(message)s",
 
 logging.info("testing using test_html")
 test_filename = 'test_html'
-logging.error("logging not working")
 with open(test_filename) as test_file:
     print(student_parser(test_file.read()))
 print(fetch_info('cs14b055'))
