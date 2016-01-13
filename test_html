@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7" lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>Academic Profile of Student | Indian Institute of Technology Madras</title>
+<style>@import url("https://www.iitm.ac.in/modules/system/system.base.css?nwlu1q");
+@import url("https://www.iitm.ac.in/modules/system/system.menus.css?nwlu1q");
+@import url("https://www.iitm.ac.in/modules/system/system.messages.css?nwlu1q");
+@import url("https://www.iitm.ac.in/modules/system/system.theme.css?nwlu1q");</style>
+<style>@import url("https://www.iitm.ac.in/sites/all/modules/date/date_api/date.css?nwlu1q");
+@import url("https://www.iitm.ac.in/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?nwlu1q");
+@import url("https://www.iitm.ac.in/sites/all/modules/date/date_repeat_field/date_repeat_field.css?nwlu1q");
+@import url("https://www.iitm.ac.in/modules/field/theme/field.css?nwlu1q");
+@import url("https://www.iitm.ac.in/modules/node/node.css?nwlu1q");
+@import url("https://www.iitm.ac.in/modules/search/search.css?nwlu1q");
+@import url("https://www.iitm.ac.in/modules/user/user.css?nwlu1q");
+@import url("https://www.iitm.ac.in/sites/all/modules/views/css/views.css?nwlu1q");</style>
+<style>@import url("https://www.iitm.ac.in/sites/all/modules/ctools/css/ctools.css?nwlu1q");
+@import url("https://www.iitm.ac.in/modules/locale/locale.css?nwlu1q");</style>
+<style media="screen">@import url("https://www.iitm.ac.in/themes/adaptivetheme/at_core/css/at.settings.style.image.css?nwlu1q");
+@import url("https://www.iitm.ac.in/themes/adaptivetheme/at_core/css/at.layout.css?nwlu1q");</style>
+<style>@import url("https://www.iitm.ac.in/themes/at_doubleq/css/global.base.css?nwlu1q");
+@import url("https://www.iitm.ac.in/themes/at_doubleq/css/global.styles.css?nwlu1q");
+@import url("https://www.iitm.ac.in/sites/default/files/color/at_doubleq-05dd381f/global.colors.css?nwlu1q");
+@import url("https://www.iitm.ac.in/themes/at_doubleq/css/styles.settings.css?nwlu1q");</style>
+<link type="text/css" rel="stylesheet" href="https://www.iitm.ac.in/sites/default/files/adaptivetheme/at_doubleq_files/at_doubleq.responsive.layout.css?nwlu1q" media="only screen" />
+<style media="screen">@import url("https://www.iitm.ac.in/sites/default/files/adaptivetheme/at_doubleq_files/at_doubleq.fonts.css?nwlu1q");</style>
+<link type="text/css" rel="stylesheet" href="https://www.iitm.ac.in/themes/at_doubleq/css/responsive.custom.css?nwlu1q" media="only screen" />
+<link type="text/css" rel="stylesheet" href="https://www.iitm.ac.in/themes/at_doubleq/css/responsive.smartphone.portrait.css?nwlu1q" media="only screen and (max-width:320px)" />
+<link type="text/css" rel="stylesheet" href="https://www.iitm.ac.in/themes/at_doubleq/css/responsive.smartphone.landscape.css?nwlu1q" media="only screen and (min-width:321px) and (max-width:480px)" />
+<link type="text/css" rel="stylesheet" href="https://www.iitm.ac.in/themes/at_doubleq/css/responsive.tablet.portrait.css?nwlu1q" media="only screen and (min-width:481px) and (max-width:768px)" />
+<link type="text/css" rel="stylesheet" href="https://www.iitm.ac.in/themes/at_doubleq/css/responsive.tablet.landscape.css?nwlu1q" media="only screen and (min-width:769px) and (max-width:1024px)" />
+<link type="text/css" rel="stylesheet" href="https://www.iitm.ac.in/themes/at_doubleq/css/responsive.desktop.css?nwlu1q" media="only screen and (min-width:1025px)" />
+
+<!--[if (lt IE 9)&(!IEMobile 7)]>
+<style media="screen">@import url("https://www.iitm.ac.in/sites/default/files/adaptivetheme/at_doubleq_files/at_doubleq.lt-ie9.layout.css?nwlu1q");</style>
+<![endif]-->
+<script src="https://www.iitm.ac.in/misc/jquery.js?v=1.4.4"></script>
+<script src="https://www.iitm.ac.in/misc/jquery.once.js?v=1.2"></script>
+<script src="https://www.iitm.ac.in/misc/drupal.js?nwlu1q"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"at_doubleq","theme_token":"0XlvKObXCgxjhX-oBBb32LZzgD4sOS-lixn67__HEy0","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"modules\/locale\/locale.css":1,"themes\/adaptivetheme\/at_core\/css\/at.settings.style.image.css":1,"themes\/adaptivetheme\/at_core\/css\/at.layout.css":1,"themes\/at_doubleq\/css\/global.base.css":1,"themes\/at_doubleq\/css\/global.styles.css":1,"themes\/at_doubleq\/css\/global.colors.css":1,"themes\/at_doubleq\/css\/styles.settings.css":1,"public:\/\/adaptivetheme\/at_doubleq_files\/at_doubleq.responsive.layout.css":1,"public:\/\/adaptivetheme\/at_doubleq_files\/at_doubleq.fonts.css":1,"themes\/at_doubleq\/css\/responsive.custom.css":1,"themes\/at_doubleq\/css\/responsive.smartphone.portrait.css":1,"themes\/at_doubleq\/css\/responsive.smartphone.landscape.css":1,"themes\/at_doubleq\/css\/responsive.tablet.portrait.css":1,"themes\/at_doubleq\/css\/responsive.tablet.landscape.css":1,"themes\/at_doubleq\/css\/responsive.desktop.css":1,"public:\/\/adaptivetheme\/at_doubleq_files\/at_doubleq.lt-ie9.layout.css":1}}});</script>
+<!--[if lt IE 9]>
+<script src="https://www.iitm.ac.in/themes/adaptivetheme/at_core/scripts/html5.js?nwlu1q"></script>
+<![endif]-->
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-students page-students-sinfo page-students-sinfo-ae08b024 i18n-en site-name-hidden color-scheme-custom bb-n mmp-inline mb-fa olb-decimal ulb-disc rc-3 ">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page-wrapper">
+  <div id="page" class="page">
+
+
+    <div id="header-wrapper">
+      <div class="container clearfix">
+        <header id="header" class="clearfix without-region-header" role="banner">
+
+                      <!-- start: Branding -->
+            <div id="branding" class="branding-elements clearfix">
+
+                              <div id="logo">
+                  <a href="/" title="Home page"><img class="site-logo image-style-none" typeof="foaf:Image" src="https://www.iitm.ac.in/sites/default/files/iitbanner_1.png" alt="Indian Institute of Technology Madras" /></a>                </div>
+
+                              <!-- start: Site name and Slogan hgroup -->
+                <hgroup class="element-invisible" id="name-and-slogan">
+
+                                      <h1 class="element-invisible" id="site-name"><a href="/" title="Home page">Indian Institute of Technology Madras</a></h1>
+
+
+                </hgroup><!-- /end #name-and-slogan -->
+
+            </div><!-- /end #branding -->
+
+                  <div id="nav-wrapper">
+            <div id="menu-bar" class="nav clearfix"><nav id="block-locale-language" class="block block-locale no-title menu-wrapper menu-bar-wrapper clearfix"  role="complementary">
+
+  <ul class="language-switcher-locale-url"><li class="en first active"><a href="/students/sinfo/AE08B024" class="language-link active" lang="en">English</a></li><li class="hi last"><a href="/hi/students/sinfo/AE08B024" class="language-link" lang="hi">हिन्दी</a></li></ul>
+  </nav><nav id="block-system-main-menu" class="block block-system block-menu menu-wrapper menu-bar-wrapper clearfix"  role="navigation">
+      <h2 class="element-invisible block-title element-invisible">Main menu</h2>
+
+  <ul class="menu clearfix"><li class="first leaf menu-depth-1 menu-item-218"><a href="/" title="">Home</a></li><li class="leaf menu-depth-1 menu-item-421"><a href="/about">About IIT Madras</a></li><li class="leaf menu-depth-1 menu-item-617"><a href="/administration" title="Administration">Administration</a></li><li class="leaf menu-depth-1 menu-item-498"><a href="/academics" title="Academics">Academics</a></li><li class="leaf menu-depth-1 menu-item-452"><a href="/info/dept" title="">Departments</a></li><li class="leaf menu-depth-1 menu-item-485"><a href="/centres" title="Centres">Centres</a></li><li class="leaf menu-depth-1 menu-item-515"><a href="/content/research" title="Research">Research</a></li><li class="last leaf menu-depth-1 menu-item-682"><a href="/content/people" title="People">People</a></li></ul>
+  </nav></div>          </div>
+
+        </header>
+      </div>
+    </div>
+
+
+
+
+
+    <div id="content-wrapper">
+      <div class="container">
+        <div id="columns">
+          <div class="columns-inner clearfix">
+            <div id="content-column">
+              <div class="content-inner">
+
+
+                <section id="main-content">
+
+
+                                      <header id="main-content-header" class="clearfix">
+
+                                              <h1 id="page-title">Academic Profile of Student</h1>
+
+
+                    </header>
+
+                                      <div id="content">
+                      <div id="block-system-main" class="block block-system no-title" >
+
+  <h1>AE08B024</h1>Profile from academic database:<br/>
+<table><tr><td colspan=2><strong>K Vinoth </strong></td></tr><tr><td>Gender</td><td>M</td></tr><tr><td>Program Name</td><td>Dual Degree</td></tr><tr><td>Branch</td><td>Dual Degree (B.Tech & M.Tech) Aerospace Engineering</td></tr><tr><td>Date of Joining</td><td>2008-07-28</td></tr><tr><td>Department</td><td>Aerospace Engineering</td></tr><tr><td>Batch</td><td>H</td></tr><tr><td>Current semester</td><td>13</td></tr><tr><td>Faculty Advisor</td><td>MURTHY H S N</td></tr><tr><td>Nationality</td><td>INDIAN</td></tr><tr><td>Status</td><td></td></tr><tr><td>IsEnrolled</td><td>1</td></tr></table><p>This page was created on: Wednesday 13th of January 2016 05:02:47 PM</p>
+  </div>                    </div>
+
+
+
+                </section>
+
+
+              </div>
+            </div>
+
+            <div class="region region-sidebar-first sidebar"><div class="region-inner clearfix"><section id="block-block-9" class="block block-block" ><div class="block-inner clearfix">
+      <h2 class="block-title">Admissions</h2>
+
+  <div class="block-content content clearfix"><div class="block-content-inner clearfix"><p>Admissions:<br /><a href="http://gate.iitm.ac.in/">GATE</a> | <a href="http://jam.iitm.ac.in">JAM</a> | <a href="http://www.jeeadv.ac.in/">JEE (Advanced)</a> | <a href="http://hsee.iitm.ac.in">HSEE</a></p>
+</div></div>
+  </div></section><section id="block-menu-menu-links" class="block block-menu"  role="navigation"><div class="block-inner clearfix">
+      <h2 class="block-title">Links / लिंक्स</h2>
+
+  <div class="block-content content clearfix"><div class="block-content-inner clearfix"><ul class="menu clearfix"><li class="first leaf menu-depth-1 menu-item-484"><a href="http://www.cenlib.iitm.ac.in/" title="Central Library">Central Library</a></li><li class="leaf menu-depth-1 menu-item-467"><a href="http://eservices.iitm.ac.in/fsportal/campusnews/list" title="Campus News">Campus News</a></li><li class="leaf menu-depth-1 menu-item-577"><a href="/ijaesam-new-journal" title="">IJAESAM - New Journal</a></li><li class="leaf menu-depth-1 menu-item-685"><a href="/icsr" title="Industrial Consultancy &amp; Sponsored Research">Industrial Consultancy &amp; Sponsored Research</a></li><li class="leaf menu-depth-1 menu-item-691"><a href="http://alumni.iitm.ac.in" title="Alumni Relations">Alumni Relations</a></li><li class="leaf menu-depth-1 menu-item-480"><a href="http://www.oir.iitm.ac.in" title="International Relations">International Relations</a></li><li class="leaf menu-depth-1 menu-item-439"><a href="http://nptel.iitm.ac.in" title="">NPTEL</a></li><li class="leaf menu-depth-1 menu-item-481"><a href="http://placement.iitm.ac.in" title="Placement">Placement</a></li><li class="leaf menu-depth-1 menu-item-486"><a href="http://respark.iitm.ac.in/" title="IIT Madras Research Park">Research Park</a></li><li class="leaf menu-depth-1 menu-item-671"><a href="/content/right-information" title="Right To Information">Right To Information</a></li><li class="leaf menu-depth-1 menu-item-670"><a href="/content/teldir" title="Telephone Directory as on 21st Dec 2015">Telephone Directory</a></li><li class="leaf menu-depth-1 menu-item-690"><a href="http://www.jeeadv.ac.in/" title="">JEE (Advanced)</a></li><li class="leaf menu-depth-1 menu-item-695"><a href="http://www.incubation.iitm.ac.in/" title=""> IITM Incubation Cell</a></li><li class="leaf menu-depth-1 menu-item-699"><a href="http://hsee.iitm.ac.in" title="">HSEE</a></li><li class="leaf menu-depth-1 menu-item-694"><a href="http://issuu.com/hindimanjusha/docs/hindi_manjusha_mar2014" title="">Hindi Manjusha</a></li><li class="leaf menu-depth-1 menu-item-697"><a href="http://www-test.iitm.ac.in/dpaf/RPN 2014 Revised.pdf" title="">RPN 2014 Revised</a></li><li class="leaf menu-depth-1 menu-item-696"><a href="/strategicplan2020" title="Strategic Plan 2020">Strategic Plan 2020</a></li><li class="last leaf menu-depth-1 menu-item-701"><a href="https://www.iitm.ac.in/content/election-commission" title="">Election commission</a></li></ul></div></div>
+  </div></section></div></div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+          <div id="footer-wrapper">
+        <div class="image-overlay">
+          <div class="container clearfix">
+                                      <footer id="footer" class="clearfix" role="contentinfo">
+                <div class="region region-footer"><div class="region-inner clearfix"><div id="block-block-1" class="block block-block no-title" ><div class="block-inner clearfix">
+
+  <div class="block-content content no-title clearfix"><div class="block-content-inner clearfix"><p><span style="font-size: medium;"><a href="http://www.iitsystem.ac.in" target="_blank" title="IIT System">The IIT system</a> | Reach IITM on  <a href="http://www.facebook.com/reachIITM" target="_blank" title="ReachIITM"> <img src="/sites/default/files/facebook.png" alt="Facebook" title="ReachIITM" /></a> <a href="https://twitter.com/reachIITM" target="_blank" title="Twitter"> <img src="/sites/default/files/twitter.png" alt="ReachIITM" title="Twitter-ReachIITM" /></a> <a href="https://plus.google.com/111566066484768212335" target="_blank" title="Google+"> <img src="/sites/default/files/google.png" alt="Google+" title="Google+" /></a> | Alumni network on <a href="http://www.linkedin.com/groups?gid=1747&amp;trk=myg_ugrp_ovr" target="_blank" title="LinkedIn"> <img src="/sites/default/files/linkedin.png" alt="LinkedIn" title="LinkedIn" /></a> <a href="https://twitter.com/iitm_alumni" target="_blank" title="Twitter"> <img src="/sites/default/files/twitter.png" alt="Alumni" title="Twitter-Alumni" /></a> | <a href="/content/feedback" title="Feedback on this website">Feedback</a> | <a href="/content/contact-details">Contact Us</a></span></p>
+</div></div>
+  </div></div></div></div>              </footer>
+                      </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+  </body>
+</html>
