@@ -16,7 +16,8 @@ def fetch_info(roll_no):
     """
     roll_no = roll_no.upper()
     if not ROLL_NO.match(roll_no):
-        raise ValueError("Invalid roll no")
+        logging.error("got invalid roll no %s",roll_no)
+        raise ValueError("Invalid roll no : %s" % roll_no)
     url = 'https://www.iitm.ac.in/students/sinfo/%s' % (roll_no)
     logging.info('opening url %s', url)
     res = request.urlopen(url)
