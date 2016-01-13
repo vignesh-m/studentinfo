@@ -22,7 +22,7 @@ def fetch_info(roll_no):
     res = urllib2.urlopen(url)
     logging.info('status code for response %s', res.getcode())
     html = res.read()
-    return student_parser(html)
+    return student_parser(html, roll_no)
 
 
 def parse_tr_second(tr):
@@ -35,7 +35,7 @@ def parse_tr_second(tr):
         raise ValueError("tr doesnt have 2 tds")
 
 
-def student_parser(html):
+def student_parser(html, roll_no=""):
     """
     Parse given iitm sinfo html to extract student info.
 
@@ -50,6 +50,7 @@ def student_parser(html):
         trs = main.find_all("tr")
         name = trs[0].text  # TODO clean name?
         student["name"] = name
+        student["photo_url"] = "https://photos.iitm.ac.in/byroll.php?roll=%s" % roll_no
         try:
             student["gender"] = parse_tr_second(trs[1])
         except (ValueError, IndexError):
