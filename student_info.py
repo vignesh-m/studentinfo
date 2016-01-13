@@ -5,7 +5,8 @@ import logging
 import re
 from urllib import request
 ROLL_NO = re.compile('[A-Z]{2}\d{2}[A-Z]\d{3}$')
-
+student_props = ['name', 'gender', 'dept', 'datejoin',
+    'course', 'facad', 'sem']
 
 def fetch_info(roll_no):
     """

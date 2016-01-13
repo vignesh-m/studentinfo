@@ -1,7 +1,7 @@
 import tkinter
 import logging
 
-import student_info
+from student_info import fetch_info,student_props
 
 class simpleapp_tk(tkinter.Tk):
     def __init__(self,parent):
@@ -14,7 +14,7 @@ class simpleapp_tk(tkinter.Tk):
 
         self.roll_value = tkinter.StringVar()
         self.roll_label = tkinter.Label(self, text="Roll Number")
-        self.roll_label.grid(column=0, row=0, stick='W')
+        self.roll_label.grid(column=0, row=0, sticky='W')
         self.roll_entry = tkinter.Entry(self,textvariable=self.roll_value)
         self.roll_entry.grid(column=0,row=1,sticky='W')
         self.roll_entry.bind("<Return>", self.OnPressEnter)
@@ -24,14 +24,18 @@ class simpleapp_tk(tkinter.Tk):
                                 command=self.OnButtonClick)
         get_button.grid(column=0,row=2, sticky='W')
 
-        self.name_value = tkinter.StringVar()
-        label = tkinter.Label(self,textvariable=self.name_value)
-        label.grid(column=1,row=1,columnspan=2,sticky='W')
-        self.name_value.set("<name>")
+        self.student_values = {}
+        self.student_labels = {}
+        for i,prop in enumerate(student_props):
+            self.student_values[prop] = tkinter.StringVar()
+            self.student_labels[prop] = tkinter.Label(self,textvariable=self.student_values[prop])
+            self.student_labels[prop].grid(column=1,row=i+1,columnspan=2,sticky='NW')
+            self.student_values[prop].set("<%s>"%prop)
+
 
         self.grid_columnconfigure(0,weight=1)
         self.grid_rowconfigure(0,weight=1)
-        self.resizable(True,False)
+        self.resizable(True,True)
         self.update()
         self.geometry(self.geometry())
         self.roll_entry.focus_set()
@@ -39,9 +43,9 @@ class simpleapp_tk(tkinter.Tk):
 
     def get_student_info(self):
         logging.debug('getting student info for %s',self.roll_value.get())
-        self.student = student_info.fetch_info(self.roll_value.get())
-        
-        self.name_value.set(self.student.get("name","<name>"))
+        self.student = fetch_info(self.roll_value.get())
+        for prop in student_props:
+            self.student_values[prop].set(self.student.get(prop,""))
 
     def OnButtonClick(self):
         self.get_student_info()
