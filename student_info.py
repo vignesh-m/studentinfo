@@ -1,6 +1,5 @@
 """Module to get student info from roll number, use fetch_info."""
 from bs4 import BeautifulSoup as bsoup
-import json
 import logging
 import re
 from io import BytesIO
@@ -10,6 +9,8 @@ from PIL import Image
 ROLL_NO = re.compile('[A-Z]{2}\d{2}[A-Z]\d{3}$')
 student_props = ['name', 'gender', 'dept', 'datejoin',
                  'course', 'facad', 'sem']
+student_display_props = ['Name', 'Gender', 'Department', 'Join Date',
+                         'Course', 'Fac. Ad.', 'Semester']
 
 
 def fetch_info(roll_no):
