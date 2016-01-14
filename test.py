@@ -1,5 +1,5 @@
 """Basic tests."""
-# from student_info import student_parser, fetch_info
+from student_info import student_parser, fetch_info
 from gui import start_gui
 import logging
 logging.basicConfig(format="%(asctime)s : %(levelname)s:%(message)s",

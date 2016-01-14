@@ -3,10 +3,14 @@ from bs4 import BeautifulSoup as bsoup
 import json
 import logging
 import re
+from io import BytesIO
 from urllib import request
+from PIL import Image
+
 ROLL_NO = re.compile('[A-Z]{2}\d{2}[A-Z]\d{3}$')
 student_props = ['name', 'gender', 'dept', 'datejoin',
-    'course', 'facad', 'sem']
+                 'course', 'facad', 'sem']
+
 
 def fetch_info(roll_no):
     """
@@ -17,7 +21,7 @@ def fetch_info(roll_no):
     """
     roll_no = roll_no.upper()
     if not ROLL_NO.match(roll_no):
-        logging.error("got invalid roll no %s",roll_no)
+        logging.error("got invalid roll no %s", roll_no)
         raise ValueError("Invalid roll no : %s" % roll_no)
     url = 'https://www.iitm.ac.in/students/sinfo/%s' % (roll_no)
     logging.info('opening url %s', url)
@@ -37,6 +41,12 @@ def parse_tr_second(tr):
         raise ValueError("tr doesnt have 2 tds")
 
 
+def get_image(url):
+    """Gets image from given url as PIL Image."""
+    res = request.urlopen(url)
+    return Image.open(BytesIO(res.read()))
+
+
 def student_parser(html, roll_no=""):
     """
     Parse given iitm sinfo html to extract student info.
@@ -45,7 +55,7 @@ def student_parser(html, roll_no=""):
         course, facad, sem
     """
     logging.debug('fetching student info')
-    soup = bsoup(html,'html.parser')
+    soup = bsoup(html, 'html.parser')
     student = {}
     try:
         main = soup.find(id="block-system-main").table
@@ -53,6 +63,7 @@ def student_parser(html, roll_no=""):
         name = trs[0].text  # TODO clean name?
         student["name"] = name
         student["photo_url"] = "https://photos.iitm.ac.in/byroll.php?roll=%s" % roll_no
+        student["photo"] = get_image(student["photo_url"])
         try:
             student["gender"] = parse_tr_second(trs[1])
         except (ValueError, IndexError):
@@ -77,7 +88,7 @@ def student_parser(html, roll_no=""):
             student["sem"] = parse_tr_second(trs[7])
         except (ValueError, IndexError):
             logging.error("", exc_info=True)
-        logging.debug("return student %s", json.dumps(student))
+        # logging.debug("return student %s", json.dumps(student))
         return student
-    except:
+    except Exception:
         raise ValueError("Unable to parse html")
