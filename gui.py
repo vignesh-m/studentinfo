@@ -1,14 +1,15 @@
 """ GUI to display student data. """
 import tkinter
 import logging
-from student_info import fetch_info, student_props
+from student_info import student_props
 from PIL import ImageTk
 
 
 class App(tkinter.Tk):
-    def __init__(self, parent):
+    def __init__(self, parent, info_cache):
         tkinter.Tk.__init__(self, parent)
         self.parent = parent
+        self.cache = info_cache
         self.initialize()
 
     def initialize(self):
@@ -33,7 +34,7 @@ class App(tkinter.Tk):
             self.student_labels[prop].grid(column=1, row=i+1, columnspan=2, sticky='NW')
             self.student_values[prop].set("<%s>" % prop)
 
-        self.photo_label = tkinter.Label(self,text='<image>')
+        self.photo_label = tkinter.Label(self, text='<image>')
         self.photo_label.grid(column=3, row=0, columnspan=2, rowspan=4)
         self.grid_columnconfigure(0, weight=1)
         self.grid_rowconfigure(0, weight=1)
@@ -45,7 +46,7 @@ class App(tkinter.Tk):
 
     def get_student_info(self):
         logging.debug('getting student info for %s', self.roll_value.get())
-        self.student = fetch_info(self.roll_value.get())
+        self.student = self.cache.fetch_info(self.roll_value.get())
         if 'photo' in self.student:
             image = ImageTk.PhotoImage(self.student['photo'])
             self.photo_label.configure(image=image)
@@ -64,7 +65,7 @@ class App(tkinter.Tk):
         self.roll_entry.selection_range(0, tkinter.END)
 
 
-def start_gui():
-    app = App(None)
+def start_gui(cache):
+    app = App(None, cache)
     app.title('Student Info')
     app.mainloop()

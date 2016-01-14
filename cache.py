@@ -1,20 +1,40 @@
 """ Cache class to store, extract student data in local file.
-    Uses JSON to encode list of students.
+    Uses pickle to encode list of students.
 """
-import json
+import pickle
+import student_info
+import os
+import logging
 
 
 class Cache(object):
-    def __init__(self, cdir='~/tmp/studentinfo.json'):
-        self.dir = cdir
+    def __init__(self, cfile='./tmp/studentinfo.dat'):
+        self.cfile = cfile
         self.extract()
 
     def extract(self):
-        with open('~/tmp/studentinfo.json') as cfile:
-            self.students = json.loads(cfile.read())
+        try:
+            cfile = open(self.cfile, 'rb')
+            self.students = pickle.load(cfile)
+        except (FileNotFoundError, IOError):
+            os.makedirs(os.path.dirname(self.cfile), exist_ok=True)
+            cfile = open(self.cfile, 'wb')
+            self.students = {}
+            self.store()
 
     def store(self, student=None):
         if student:
-            self.students.append(student)
-        with open('~/tmp/studentinfo.json') as cfile:
-            cfile.write(json.dumps(self.students))
+            self.students[student['rollno']] = student
+        with open(self.cfile, 'wb') as cfile:
+            pickle.dump(self.students, cfile)
+
+    def fetch_info(self, roll_no):
+        roll_no = roll_no.upper()
+        if roll_no in self.students:
+            logging.info('serving %s from cache' % roll_no)
+            return self.students[roll_no]
+        else:
+            logging.info('serving %s from url' % roll_no)
+            student = student_info.fetch_info(roll_no)
+            self.store(student)
+            return student

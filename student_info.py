@@ -56,7 +56,7 @@ def student_parser(html, roll_no=""):
     """
     logging.debug('fetching student info')
     soup = bsoup(html, 'html.parser')
-    student = {}
+    student = {"rollno": roll_no}
     try:
         main = soup.find(id="block-system-main").table
         trs = main.find_all("tr")
