@@ -8,11 +8,14 @@ import logging
 
 
 class Cache(object):
-    def __init__(self, cfile='./tmp/studentinfo.dat'):
+    def __init__(self, cfile='./tmp/studentinfo.dat', use_cache=True):
         self.cfile = cfile
+        self.use_cache = use_cache
         self.extract()
 
     def extract(self):
+        if not self.use_cache:
+            pass
         try:
             cfile = open(self.cfile, 'rb')
             self.students = pickle.load(cfile)
@@ -23,6 +26,8 @@ class Cache(object):
             self.store()
 
     def store(self, student=None):
+        if not self.use_cache:
+            pass
         if student:
             self.students[student['rollno']] = student
         with open(self.cfile, 'wb') as cfile:
@@ -30,7 +35,7 @@ class Cache(object):
 
     def fetch_info(self, roll_no):
         roll_no = roll_no.upper()
-        if roll_no in self.students:
+        if self.use_cache and roll_no in self.students:
             logging.info('serving %s from cache' % roll_no)
             return self.students[roll_no]
         else:

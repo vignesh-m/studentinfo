@@ -2,7 +2,7 @@
 import tkinter
 from tkinter import W, N, E, S
 import logging
-from student_info import student_props,student_display_props
+from student_info import student_props, student_display_props
 from PIL import ImageTk
 
 
