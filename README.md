@@ -10,6 +10,8 @@ Run using
 ``` python main.py ```
 
 This app caches results for better performance.
+Change cache settings using command line options.
+``` python main.py -h ``` lists available settings
 
 TK and Pillow support is necessary. On Ubuntu these packages need to be installed.
 
